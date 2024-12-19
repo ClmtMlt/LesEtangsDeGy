@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about_us
+  def contact
+  end
+
+  def book
   end
 end
