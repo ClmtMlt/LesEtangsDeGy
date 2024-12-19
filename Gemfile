@@ -7,6 +7,10 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
 gem "autoprefixer-rails"
 
+group :development do
+  gem "hotwire-livereload"
+end
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
 
@@ -32,7 +36,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", ">= 4.0.1"
+gem "redis", ">= 4.0.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
