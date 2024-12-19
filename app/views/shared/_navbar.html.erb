@@ -1,26 +1,33 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "iconeetangbrowser" %>
+<div class="navbar navbar-expand-sm">
+  <div class="container d-flex justify-content-around ">
+    <div class="brand-identity d-flex align-items-center">
+      <%= link_to "#", class: "navbar-brand" do %>
+        <%= image_tag "iconeetangbrowser" %>
+      <% end %>
       <h1>Les Étangs De Gy</h1>
-    <% end %>
+    </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
+    <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarSupportedContent">
+      <ul class="navbar-nav">
         <li class="nav-item active">
-          <%= link_to "Notre Gîte", "#", class: "nav-link" %>
+          <%= link_to "Notre Gîte", "#sectiongite", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Activités", "#", class: "nav-link" %>
+          <%= link_to "Activités", "#sectionactivities", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contacter", "#", class: "nav-link" %>
+          <%= link_to "Contacter", contact_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Conditions", conditions_path, class: "nav-link" %>
         </li>
       </ul>
     </div>
+
+    <button class="btn btn-primary">Réserver</button>
   </div>
 </div>

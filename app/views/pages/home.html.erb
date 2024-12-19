@@ -1,62 +1,74 @@
-<div class="home-page-container">
-
-  <%= render "shared/navbar" %>
-
-
-</div>
-
-<div class="container ">
+<div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-lg-6">
 
-      <div class="row title">
+      <div class="container carrousel">
+        <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/ext1.jpeg" class="d-block w-100" alt="Photo 1">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Vue extérieure</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/ext2.jpeg" class="d-block w-100" alt="Photo 2">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Vue extérieure</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/images/ext3.jpeg" class="d-block w-100" alt="Photo 3">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Vue extérieure</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contrôles précédent/suivant -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="#sectiongite">
         <h2>Notre Gîte</h2>
-      </div>
-      <div class="row">
-      <p>Venez découvrir notre paradis</p>
+        <p>Venez découvrir notre paradis</p>
       </div>
 
-      <div class="row title">
-      <h2>Ils ont déjà tenté l'aventure</h2>
-      </div>
-      <div class="row">
-      <p>avis </p>
+      <div class="row" id="#sectionactivities">
+        <h2>Que faire autour du gîte ?</h2>
       </div>
 
-      <div class="row title">
-      <h2>Que faire autour du gîte ?</h2>
-      </div>
       <div class="row">
+        <h2>Besoin d'informations ?</h2>
+        <p>Vous avez besoin de nous demander quelque chose de particulier ? Vous pouvez le faire ici et nous y répondrez aussi vite que possible. Vous pouvez aussi consulter nos conditions, nous avons peut être déjà répondu à une question que vous vous poseriez, si ce n'est pas le cas, vous pouvez nous poser votre question juste en dessous.</p>
+        <button class="btn btn-primary">Nous contacter</button>
       </div>
 
-      <div class="row title">
-      <h2>Besoin d'informations ?</h2>
-      </div>
       <div class="row">
-      <p>Vous avez besoin de nous demander quelque chose de particulier ? Vous pouvez le faire ici et nous y répondrez aussi vite que possible. Vous pouvez aussi consulter nos conditions, nous avons peut être déjà répondu à une question que vous vous poserez, si ce n'est pas le cas, vous pouvez nous poser votre question juste en dessous.</p>
-      </div>
-      <div class="row">
-      <button class="btn btn-primary">Nous contacter</button>
+        <h2>Envie de séjourner chez nous?</h2>
+        <button class="btn btn-primary">Réserver</button>
       </div>
 
-      <div class="row title">
-      <h2>Envie de séjourner chez nous?</h2>
-      </div>
-      <div class="row">
-      <button class="btn btn-primary">Réserver</button>
-      </div>
-
-      <div class="row title">
-      <h2>Vous pouvez aussi nous retrouver ici</h2>
-      </div>
-      <div class="row">
-      <p>Nous sommes présents sur les plateformes de réservation AirB&B et CybÉvasion, voici les liens vers nos annonces :</p>
-      </div>
       <div class="row logo">
+        <h2>Vous pouvez aussi nous retrouver ici</h2>
+        <p>Nous sommes présents sur les plateformes de réservation AirB&B et CybÉvasion depuis le début de notre aventure, vous pouvez retrouver nos annonces juste ici :</p>
         <a href="https://www.cybevasion.fr/gites-gite-3-personnes-coeur-de-sologne-gy-en-sologne-e91877.html"><%= image_tag "cyblogo.png" %></a>
         <a href="https://www.airbnb.fr/rooms/1029643770952205458?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-12-19&check_out=2024-12-24&source_impression_id=p3_1734615749_P3iZljZH7bpSdZ_i&previous_page_section_name=1000&federated_search_id=1694c9f4-1cc1-4a97-94d0-85c0fbe39020"><%= image_tag "rbnblogo.jpg" %></a>
       </div>
-
 
     </div>
   </div>

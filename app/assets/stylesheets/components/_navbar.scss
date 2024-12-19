@@ -1,12 +1,33 @@
-.navbar-lewagon {
-  justify-content: space-between;
+.navbar {
   background: white;
+  position: sticky;
+  z-index: 10000;
+  top: 0px;
+  margin-bottom: 5vh;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0px;
+  }
+
+  button {
+    font-size: 2rem;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar .navbar-collapse {
+  scroll-behavior: smooth;
+
+  ul {
+    margin: 0px;
+
+    li {
+      margin: 0px 3vw 0px 3vw;
+      font-size: 1rem;
+    }
+  }
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 40px;
 }

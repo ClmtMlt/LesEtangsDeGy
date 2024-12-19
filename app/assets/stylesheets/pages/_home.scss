@@ -1,12 +1,21 @@
-.title {
-  justify-content: center;
+h2 {
+  text-align: center;
+}
+
+p {
+  text-indent: 3em;
 }
 .logo {
   img {
     height: 100px;
     width: 100px;
   }
-  a {
+}
 
+.carousel-item {
+
+  img {
+  height: 65vh;
+  object-fit: cover;
   }
 }

@@ -1,0 +1,26 @@
+.footbar {
+  background: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  padding: 1rem;
+  margin-top: 5vh;
+}
+
+.logo-icones {
+  width: 100%;
+  img {
+    margin: 0px 1rem 0px 1rem;
+    height: 5vh;
+  }
+}
+
+.links-container {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1rem;
+
+  a {
+    margin: 0px 2rem 0px 2rem;
+  }
+}
